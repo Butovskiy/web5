@@ -164,21 +164,13 @@
         	</form>
         </div></br>
 
-        <script>
-			function click1() {
-			  let f1 = document.getElementsByName("field1");
-			  let f2 = document.getElementsByName("field2");
-			  let r = document.getElementById("result");
-			  r.innerHTML = f1[0].value * f2[0].value;
-			  return false;
-			}
-		</script>
-		<form class="col-sm-6 m-auto p-4" style="display:flex; justify-content: space-between;">
+        <script defer src="js/Math.json"></script>
+		<form class="col-sm-6 m-auto p-4" style="display: flex; justify-content: space-between; flex-direction: column;">
 			<font style="font-size: 1.2em; display: flex; justify-content: center; font-weight: bold; align-items: center;">Расчёт стоимости заказа</font>
-		  <input name="field1" type="text" style="width: 6em; height: 2em; margin-top: 0.2em" placeholder="Стоимость" >
-		  <input name="field2" type="text" style="width: 6em; height: 2em; margin-top: 0.2em" placeholder="Количество">
-		  <button id="bot1" type="submit" onclick="return click1();" style="height: 2em" >OK</button>
-		  <div id="result" style="margin-top: 0.4em"></div>
+		 	<input name="field1" type="text" style="width: 6em; height: 2em; margin-top: 0.2em" placeholder="Стоимость" >
+		 	<input name="field2" type="text" style="width: 6em; height: 2em; margin-top: 0.2em" placeholder="Количество">
+		 	<button id="bot1" type="submit" onclick="return click1();" style="height: 2em; width: 5em" >OK</button>
+		 	<div id="result" style="margin-top: 0.4em"></div>
 		</form>
         </ol>
 		</div>
